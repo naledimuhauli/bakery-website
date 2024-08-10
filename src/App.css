@@ -61,3 +61,36 @@ body {
   margin: 40px;
   padding-bottom: 50px;
 }
+
+@media(max-width: 900px) {
+  .home-page .welcome {
+    font-size: 30px;
+    padding-top: 100px;
+    font-weight: 300;
+  }
+
+  .home-page .heading {
+    font-size: 40px;
+  }
+
+  .home-page .description {
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  .product1,
+  .product2,
+  .product5,
+  .product3,
+  .product4 {
+    padding: 5px 0;
+    border-radius: 10px;
+    margin: 5px;
+    font-weight: 400;
+
+  }
+
+  .home-page .details {
+    padding-bottom: 90px;
+  }
+}
