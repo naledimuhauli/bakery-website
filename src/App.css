@@ -1,38 +1,63 @@
-.App {
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.home-page {
+  background-image: url(./images/background1.webp);
+  background-size: cover;
+  /* padding: 100px; */
+  min-width: 100%;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.home-page .welcome {
+  font-size: 40px;
+  color: rgba(99, 48, 15, 0.753);
+  padding-top: 170px;
+  font-weight: 450;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home-page .heading {
+  font-size: 60px;
+  color: rgba(54, 24, 4, 0.753);
+  font-family: "Pacifico", cursive;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.home-page .description {
+  font-size: 30px;
+  color: rgba(54, 24, 4, 0.753);
+  font-weight: 400;
 }
 
-.App-link {
-  color: #61dafb;
+
+.product1,
+.product2,
+.product5,
+.product3,
+.product4 {
+  padding: 5px 0;
+  background-color: rgba(155, 109, 78, 0.753);
+  border-radius: 10px;
+  margin: 10px;
+  display: inline-block;
+  color: black;
+  font-weight: 500;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-page .details {
+  color: rgba(63, 31, 10, 0.753);
+  font-weight: 600;
+  line-height: 5px;
+  margin: 40px;
+  padding-bottom: 50px;
 }
