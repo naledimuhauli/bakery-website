@@ -1,11 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import Navbar from './Navbar';
 
 const Home = () => {
     return (
         <div>
             <div className='container home-page'>
+                <Navbar />
                 <p className='welcome'>Welcome To</p>
                 <h1 className='heading'>Dreamy Bakes</h1>
                 <p className='description'>Where Every Bite Is Made With Love</p>

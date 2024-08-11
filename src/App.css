@@ -21,7 +21,7 @@ body {
 .home-page .welcome {
   font-size: 40px;
   color: rgba(99, 48, 15, 0.753);
-  padding-top: 170px;
+  padding-top: 100px;
   font-weight: 450;
 }
 
@@ -65,7 +65,7 @@ body {
 @media(max-width: 900px) {
   .home-page .welcome {
     font-size: 30px;
-    padding-top: 100px;
+    padding-top: 10px;
     font-weight: 300;
   }
 
