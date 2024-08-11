@@ -103,5 +103,25 @@ body {
 }
 
 .about-us .about {
-  background-color: rgb(202, 165, 141);
+  background-color: rgb(214, 181, 160);
+  box-shadow: 0px 4px 15px rgba(253, 253, 252, 0.5);
+}
+
+
+.about-us .title {
+  color: rgb(61, 31, 6);
+  font-weight: 500;
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+.about-us .lead {
+  font-weight: 500;
+}
+
+.about-us .contact {
+  color: rgb(99, 8, 61);
+  background-color: rgba(252, 162, 200, 0.397);
+  box-shadow: 0px 4px 15px rgba(248, 2, 56, 0.5);
+  border: 1px solid black;
 }
