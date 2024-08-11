@@ -10,7 +10,6 @@ body {
 .home-page {
   background-image: url(./images/background1.webp);
   background-size: cover;
-  /* padding: 100px; */
   min-width: 100%;
   align-items: center;
   justify-content: center;
@@ -94,4 +93,15 @@ body {
   .home-page .details {
     padding-bottom: 90px;
   }
+}
+
+.about-us {
+  background-color: rgba(155, 109, 78, 0.753);
+  padding: 40px;
+  margin-top: 0;
+  max-height: 100%;
+}
+
+.about-us .about {
+  background-color: rgb(202, 165, 141);
 }
