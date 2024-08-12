@@ -19,27 +19,27 @@ const Products = () => {
                     </h2>
                     <div className='products-details p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg'>
                         <div className='product'>
-                            <img src={Macroons} />
+                            <img src={Macroons} alt='macron' />
                             <h3 className='name'>Macarons</h3>
                         </div>
                         <div className='product'>
-                            <img src={Cakes} />
+                            <img src={Cakes} alt='macron' />
                             <h3 className='name'>Cakes</h3>
                         </div>
                         <div className='product'>
-                            <img src={Croisants} />
+                            <img src={Croisants} alt='croisant' />
                             <h3 className='name'>Croissants</h3>
                         </div>
                         <div className='product'>
-                            <img src={Eclairs} />
+                            <img src={Eclairs} alt='eclair' />
                             <h3 className='name'>Eclairs</h3>
                         </div>
                         <div className='product'>
-                            <img src={Cookies} />
+                            <img src={Cookies} alt='cookies' />
                             <h3 className='name'>Cookies</h3>
                         </div>
                         <div className='product'>
-                            <img src={Cupcakes} />
+                            <img src={Cupcakes} alt='cupcake' />
                             <h3 className='name'>Cupcakes</h3>
                         </div>
                     </div>
