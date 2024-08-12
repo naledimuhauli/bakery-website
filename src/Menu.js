@@ -29,20 +29,20 @@ const Menu = () => {
             image: CroissantImg
         },
         {
-            name: 'Danishs',
+            name: 'Cakes',
             description: (
                 <>
-                    <div><strong>Berry Danish:</strong> R65.00</div>
-                    <div>A flaky pastry filled with a mix of fresh berries and a hint of lemon.</div>
-                    <div><strong>Cheese Danish:</strong> R68.00</div>
-                    <div>Creamy cheese filling with a touch of vanilla and a sprinkle of sugar.</div>
-                    <div><strong>Pecan Danish:</strong> R70.00</div>
-                    <div>Topped with caramelized pecans and a drizzle of sweet icing.</div>
-                    <div><strong>Apple Danish:</strong> R63.00</div>
-                    <div>Spiced apple filling with a crisp, buttery crust and a crumb topping.</div>
+                    <div><strong>Classic Chocolate Cake:</strong> R80.00</div>
+                    <div>A rich and moist chocolate cake with layers of velvety chocolate frosting.</div>
+                    <div><strong>Chocolate Ganache Cake:</strong> R85.00</div>
+                    <div>Decadent chocolate cake topped with a smooth chocolate ganache.</div>
+                    <div><strong>Classic Red Velvet:</strong> R90.00</div>
+                    <div>Red velvet cake with a hint of cocoa and a tangy cream cheese frosting.</div>
+                    <div><strong>Red Velvet Cheesecake:</strong> R95.00</div>
+                    <div>Red velvet base with creamy cheesecake filling and a sweet cream cheese topping.</div>
                 </>
             ),
-            image: DanishImg
+            image: DanishImg // Choose an appropriate image
         },
         {
             name: 'Eclairs',
@@ -77,20 +77,20 @@ const Menu = () => {
             image: MacaronImg
         },
         {
-            name: 'Tarts',
+            name: 'Cookies',
             description: (
                 <>
-                    <div><strong>Fruit Tart:</strong> R90.00</div>
-                    <div>A buttery tart shell filled with creamy pastry cream and topped with fresh fruit.</div>
-                    <div><strong>Lemon Tart:</strong> R85.00</div>
-                    <div>Tangy lemon curd in a crisp tart shell, garnished with powdered sugar.</div>
-                    <div><strong>Chocolate Tart:</strong> R92.00</div>
-                    <div>Smooth chocolate ganache in a crumbly tart base.</div>
-                    <div><strong>Almond Tart:</strong> R88.00</div>
-                    <div>Rich almond cream filling with sliced almonds on top.</div>
+                    <div><strong>Chocolate Chip Cookies:</strong> R45.00</div>
+                    <div>Soft and chewy with chunks of rich chocolate chips.</div>
+                    <div><strong>Oatmeal Raisin Cookies:</strong> R50.00</div>
+                    <div>Chewy cookies packed with oats and plump raisins.</div>
+                    <div><strong>Peanut Butter Cookies:</strong> R55.00</div>
+                    <div>Rich and nutty with a soft, melt-in-your-mouth texture.</div>
+                    <div><strong>White Chocolate Macadamia Cookies:</strong> R60.00</div>
+                    <div>Crispy cookies with white chocolate chunks and macadamia nuts.</div>
                 </>
             ),
-            image: TartImg
+            image: TartImg // Choose an appropriate image
         }
     ];
 
@@ -113,6 +113,7 @@ const Menu = () => {
                                             </div>
                                             <div className="col-md-6">
                                                 <h5 className="card-title">{pastry.name}</h5>
+                                                <hr />
                                                 <p className="card-text">{pastry.description}</p>
                                             </div>
                                         </>
@@ -123,6 +124,7 @@ const Menu = () => {
                                             </div>
                                             <div className="col-md-6 order-md-1">
                                                 <h5 className="card-title">{pastry.name}</h5>
+                                                <hr />
                                                 <p className="card-text">{pastry.description}</p>
                                             </div>
                                         </>
