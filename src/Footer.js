@@ -14,16 +14,16 @@ const Footer = () => {
             <div className="container">
                 <ul className="nav justify-content-center border-bottom pb-3 mb-3">
                     <li className="nav-item">
-                        <Link to="/" className="nav-link px-2" style={{ color: '#8B4513' }}>Home</Link>
+                        <Link to="/" className="nav-link px-2" style={{ color: 'black' }}>Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/aboutus" className="nav-link px-2" style={{ color: '#8B4513' }}>About Us</Link>
+                        <Link to="/aboutus" className="nav-link px-2" style={{ color: 'black' }}>About Us</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/menu" className="nav-link px-2" style={{ color: '#8B4513' }}>Menu</Link>
+                        <Link to="/menu" className="nav-link px-2" style={{ color: 'black' }}>Menu</Link>
                     </li>
                 </ul>
-                <p className="text-center" style={{ color: '#8B4513' }}>&copy; 2024 Dreamy Bakes, Inc</p>
+                <p className="text-center" style={{ color: 'black' }}>&copy; 2024 Dreamy Bakes, Inc</p>
             </div>
         </footer>
     );
