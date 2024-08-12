@@ -7,6 +7,7 @@ import Menu from './Menu';
 import Navbar from './Navbar';
 import About from './About';
 import Products from './Products';
+import Footer from './Footer';
 
 
 function Homepage() {
@@ -17,6 +18,7 @@ function Homepage() {
         <Home />
         <AboutUs />
         <Products />
+        <Footer />
       </div>
     </>
   );

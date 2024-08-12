@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 const Products = () => {
     return (
         <>
-            <div className='container page'>
+            <div className='container page mb-5'>
                 <div className='products-container'>
                     <h2 className='product-title'>
                         What We Offer
@@ -43,7 +43,7 @@ const Products = () => {
                             <h3 className='name'>Cupcakes</h3>
                         </div>
                     </div>
-                    <button className="btn btn-outline-secondary btn-lg px-4 contact">
+                    <button className="btn btn-outline-secondary btn-lg px-4 contact mb-5">
                         <Link to="/menu" className="nav-link"> View Menu</Link>
                     </button>
                 </div>
