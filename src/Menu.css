@@ -9,6 +9,10 @@
     padding: 50px;
 }
 
+.menu .container .row {
+    background-color: rgb(233, 204, 171);
+}
+
 
 .menu .name {
     font-size: 80px;
