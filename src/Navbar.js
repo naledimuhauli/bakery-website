@@ -1,29 +1,31 @@
 import React from 'react';
-import './App.css';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import './App.css'; // Ensure this file contains your custom styles
 
 const Navbar = () => {
     return (
-        <>
-            <header className="p-2">
-                <div className="container">
-                    <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                        <a href="/" className="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
-                        </a>
+        <header className="p-2">
+            <div className="container">
+                <header className="d-flex flex-wrap justify-content-center py-2">
+                    <Link to="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                        <span className="fs-4">Dreamy Bakes</span>
+                    </Link>
 
-                        <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                            <li><a href="#" className="nav-link px-2 link-secondary">Home</a></li>
-                            <li><a href="#" className="nav-link px-2 link-body-emphasis">About Us</a></li>
-                            <li><a href="#" className="nav-link px-2 link-body-emphasis">Menu</a></li>
-                        </ul>
+                    <ul className="nav nav-pills">
+                        <li className="nav-item">
+                            <Link to="/" className="nav-link" aria-current="page">Home</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/about" className="nav-link">About Us</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/menu" className="nav-link">Menu</Link>
+                        </li>
+                    </ul>
+                </header>
+            </div>
+        </header>
+    );
+};
 
-                        <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                            <input type="search" className="form-control" placeholder="Search..." aria-label="Search" />
-                        </form>
-                    </div>
-                </div>
-            </header >
-        </>
-    )
-}
-
-export default Navbar
+export default Navbar;

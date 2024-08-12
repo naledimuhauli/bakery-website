@@ -6,6 +6,7 @@ import DanishImg from './images/danish.jpg';
 import EclairImg from './images/eclair.jpg';
 import MacaronImg from './images/macaron.jpg';
 import TartImg from './images/tart.jpg';
+import Navbar from './Navbar';
 
 // Define the Menu component
 const Menu = () => {
@@ -95,41 +96,44 @@ const Menu = () => {
 
     // Render the Menu component
     return (
-        <div className='menu'>
-            <div className="container">
-                <h1 className='name'>Dreamy Bakes</h1>
-                <h1 className="pastry">Menu</h1>
-                <div className="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-                    {pastries.map((pastry, index) => (
-                        <div className="col-12 mb-4" key={index}>
-                            <div className={`row align-items-center ${index % 2 === 0 ? 'text-right' : 'text-left'}`}>
-                                {index % 2 === 0 ? (
-                                    <>
-                                        <div className="col-md-6 one">
-                                            <img src={pastry.image} className="img-fluid" alt={pastry.name} />
-                                        </div>
-                                        <div className="col-md-6">
-                                            <h5 className="card-title">{pastry.name}</h5>
-                                            <p className="card-text">{pastry.description}</p>
-                                        </div>
-                                    </>
-                                ) : (
-                                    <>
-                                        <div className="col-md-6 order-md-2 two">
-                                            <img src={pastry.image} className="img-fluid" alt={pastry.name} />
-                                        </div>
-                                        <div className="col-md-6 order-md-1">
-                                            <h5 className="card-title">{pastry.name}</h5>
-                                            <p className="card-text">{pastry.description}</p>
-                                        </div>
-                                    </>
-                                )}
+        <>
+            <Navbar />
+            <div className='menu'>
+                <div className="container">
+                    <h1 className='name'>Dreamy Bakes</h1>
+                    <h1 className="pastry">Menu</h1>
+                    <div className="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                        {pastries.map((pastry, index) => (
+                            <div className="col-12 mb-4" key={index}>
+                                <div className={`row align-items-center ${index % 2 === 0 ? 'text-right' : 'text-left'}`}>
+                                    {index % 2 === 0 ? (
+                                        <>
+                                            <div className="col-md-6 one">
+                                                <img src={pastry.image} className="img-fluid" alt={pastry.name} />
+                                            </div>
+                                            <div className="col-md-6">
+                                                <h5 className="card-title">{pastry.name}</h5>
+                                                <p className="card-text">{pastry.description}</p>
+                                            </div>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <div className="col-md-6 order-md-2 two">
+                                                <img src={pastry.image} className="img-fluid" alt={pastry.name} />
+                                            </div>
+                                            <div className="col-md-6 order-md-1">
+                                                <h5 className="card-title">{pastry.name}</h5>
+                                                <p className="card-text">{pastry.description}</p>
+                                            </div>
+                                        </>
+                                    )}
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 
