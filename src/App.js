@@ -6,6 +6,7 @@ import AboutUs from './AboutUs';
 import Menu from './Menu';
 import Navbar from './Navbar';
 import About from './About';
+import Products from './Products';
 
 
 function Homepage() {
@@ -15,7 +16,7 @@ function Homepage() {
         <Navbar />
         <Home />
         <AboutUs />
-        <Menu />
+        <Products />
       </div>
     </>
   );

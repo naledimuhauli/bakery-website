@@ -1,12 +1,15 @@
 import React from 'react'; // Import React library
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS for styling
 import './Menu.css'; // Import custom CSS for additional styling
+import { useNavigate } from 'react-router-dom';
 import CroissantImg from './images/croissant.jpg'; // Import images for pastries
 import DanishImg from './images/danish.jpg';
 import EclairImg from './images/eclair.jpg';
 import MacaronImg from './images/macaron.jpg';
 import TartImg from './images/tart.jpg';
+import Cupcake1Img from './images/cupcake.jpg'
 import Navbar from './Navbar';
+
 
 // Define the Menu component
 const Menu = () => {
@@ -91,8 +94,26 @@ const Menu = () => {
                 </>
             ),
             image: TartImg // Choose an appropriate image
+        },
+        {
+            name: 'Cupcakes',
+            description: (
+                <>
+                    <div><strong>Vanilla Cupcake:</strong> R35.00</div>
+                    <div>A light and fluffy vanilla cupcake topped with creamy vanilla frosting.</div>
+                    <div><strong>Chocolate Cupcake:</strong> R38.00</div>
+                    <div>Moist chocolate cupcake with rich chocolate frosting.</div>
+                    <div><strong>Red Velvet Cupcake:</strong> R40.00</div>
+                    <div>Red velvet cupcake with a tangy cream cheese frosting.</div>
+                    <div><strong>Lemon Cupcake:</strong> R37.00</div>
+                    <div>Zesty lemon cupcake with a lemon glaze and a hint of lemon zest.</div>
+                </>
+            ),
+            image: Cupcake1Img // Choose an appropriate image
         }
     ];
+
+    const navigate = useNavigate();
 
     // Render the Menu component
     return (
@@ -133,6 +154,9 @@ const Menu = () => {
                             </div>
                         ))}
                     </div>
+                    <button type="button" onClick={() => navigate(-1)} className="btn btn-outline-secondary btn-lg px-4">
+                        Back
+                    </button>
                 </div>
             </div>
         </>
