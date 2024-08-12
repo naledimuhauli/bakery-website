@@ -154,7 +154,7 @@ const Menu = () => {
                             </div>
                         ))}
                     </div>
-                    <button type="button" onClick={() => navigate(-1)} className="btn btn-outline-secondary btn-lg px-4">
+                    <button type="button" onClick={() => navigate(-1)} className="btn btn-secondary btn-lg px-4">
                         Back
                     </button>
                 </div>
