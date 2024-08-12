@@ -5,6 +5,7 @@ import Home from './Home';
 import AboutUs from './AboutUs';
 import Menu from './Menu';
 import Navbar from './Navbar';
+import About from './About';
 
 
 function Homepage() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/menu" element={<Menu />} />
+        <Route path="/aboutus" element={<About />} />
       </Routes>
     </Router>
   );
