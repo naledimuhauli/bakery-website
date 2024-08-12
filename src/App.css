@@ -126,3 +126,7 @@ body {
   box-shadow: 0px 4px 15px rgba(248, 2, 56, 0.5);
   border: 1px solid rgba(252, 162, 200, 0.397);
 }
+
+.p-2 .nav-link {
+  color: rgb(88, 61, 38);
+}
